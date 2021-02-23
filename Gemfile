@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 #https://stackoverflow.com/questions/29838237/typeerror-object-doesnt-support-this-property-or-method
 gem 'coffee-script-source', '1.8.0'
 
+gem 'devise' # Avtentikacija uporabnikov
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
