@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BlogNicksrebot</title>
+    <title>Blog Nick Srebot</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,7 +10,8 @@
 
   <body>
     <div class="navbar">
-      <%= display_navbar_options %>
+      <%= link_to "Domov", root_path %>
+      <%= display_session_links %>
     </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
