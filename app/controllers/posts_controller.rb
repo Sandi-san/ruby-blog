@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
   before_action :authenticate_user!, except: %i[ index show ]
+  before_action :authorize_user!, only: %i[ edit update destroy ]
 
   # GET /posts or /posts.json
   def index
@@ -67,5 +68,10 @@ class PostsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def post_params
       params.require(:post).permit(:title, :body)
+    end
+
+    # Preveri current_user-ja in id post-a
+    def authorize_user!
+      redirect_back fallback_location: root_path, alert: 'Dostop zavrnjen' unless current_user == @post.user
     end
 end

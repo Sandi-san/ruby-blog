@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :post_title %>
+    <%= form.text_field :title, id: :post_title, required: true %>
   </div>
 
   <div class="field">
     <%= form.label :body %>
-    <%= form.text_area :body, id: :post_body %>
+    <%= form.text_area :body, id: :post_body, required: true %>
   </div>
 
   <div class="actions">
