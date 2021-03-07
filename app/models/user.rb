@@ -3,6 +3,6 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-
-  has_many :posts # del post-a (glej post.rb)
+  acts_as_commontator
+  has_many :posts, dependent: :destroy # del post-a (glej post.rb)
 end
