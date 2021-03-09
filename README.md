@@ -1,24 +1,5 @@
-# README
+# DOKUMENTACIJA
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Aplikacija je simplistična verzija bloga.
+Uporabniki se registrirajo ali vpišejo ter lahko objavljajo bloge z nazivom in vsebino. Prikazan je tudi avtor.
+Na posamezni blog lahko uporabniki tudi komentiraji, kjer se vidi vsebina komentarja ter kdo je komentiral.
